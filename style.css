@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Roboto:wght@700&display=swap');
+    /*font-family:  'Roboto', sans-serif; }*/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    font-family:  'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    /*margin: 0;
+    padding: 0;*/
+}
+
+#navbar {
+    position: fixed;
+    width: 5%;
+    top: 0;  
+    display: inline;
+   }
+
+
+h1{
+    color: rgb(117, 36, 36);
+    text-align: center;
+    font-size: 8rem;
+    border-radius: 65%;
+    box-shadow: 10px 0px 10px cadetblue;
+}
+
+.heading {
+    height: 100vh;
+    margin-top: 400px;
+}
+
+.heading p{
+    color: rgb(143, 62, 75);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.firstAction p{
+    color: cadetblue;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.firstButton {
+    text-align: center;
+    color: blueviolet;
+    border-radius: 20%;
+    font-size: 24px;
+    width: 50%;
+    background-color: aqua;
+    margin: 0% 25% 0% 25%;
+    
+}
+
+.firstButton:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.adviceField{
+    text-align: center;
+    margin: 5% auto 0% 45%;
+}
