@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 //Countdown in the Footer
 (function () {
     const second = 1000,
@@ -45,4 +43,4 @@
           //seconds
         }, 0)
     }());
->>>>>>> Stashed changes
+
