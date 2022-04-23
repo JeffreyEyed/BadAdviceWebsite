@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bad Advice Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 <body>
   <div class="backgroundTop">
@@ -70,9 +69,12 @@
         <h3 class="askForm">Ask Your Question</h3>
         <p class="askForm">Example: "Will I ever be smart?"</p>
         <form class="askForm">
-        <input id="searchBar" type="text" placeholder="Type Question Here Dummy!">
-        <Button class="secondButton" type="submit">Submit</Button>
+          <label for="searchBar">Here -> </label>
+          <input id="searchBar" type="text" placeholder="Type Question Here Dummy!">
         </form>
+
+        <Button id="secondButton" type="button" name="button">Submit</Button>
+
     </div>
 <footer id="footer">
     <div class="container">
@@ -92,6 +94,7 @@
         </div>
       </div>
 </footer>
-    
+
+<script src="main.js"></script>  
 </body>
 </html>

@@ -44,3 +44,20 @@
         }, 0)
     }());
 
+
+// This is for the Ask You Question section
+
+    document.querySelector('#secondButton').addEventListener('click', searchBar)
+
+    function searchBar() {
+      const cb = document.querySelector('#searchBar').value
+
+      if(cb === "You're Awesome" ){
+        alert("Yeah I know it!")
+      }else if(cb === ("")){
+        alert("You didn't type anything DUMMY!")
+      }else{
+        alert("I'm not answering that.  You're dumb!")
+      }
+
+    }

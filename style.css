@@ -175,6 +175,13 @@ h3{
   font-size: 1rem;
 }
 
+#secondButton{
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 10px;
+}
+
 /* This is the countdown style in the footer*/
 :root {
     --smaller: .75;
