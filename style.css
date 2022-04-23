@@ -12,16 +12,26 @@
     padding: 0;*/
 }
 
+:target {
+  display: block;
+  position: relative;
+  top: -50px; /* this is your offset */
+}
+
 #navbar {
+    /*display: flex;
+    justify-content: center;
+    align-self: flex-start;*/
     position: fixed;
-    width: 5%;
+    width: 100%;
     top: 0;  
     display: inline;
+    text-align: right;
    }
 
 
 h1{
-    color: rgb(117, 36, 36);
+    color: rgb(209, 74, 96);
     text-align: center;
     font-size: 8rem;
     border-radius: 65%;
@@ -30,11 +40,11 @@ h1{
 
 .heading {
     height: 100vh;
-    margin-top: 400px;
+    margin-top: 300px;
 }
 
 .heading p{
-    color: rgb(143, 62, 75);
+    color: rgb(209, 74, 96);
     font-size: 3rem;
     text-align: center;
 }
@@ -64,4 +74,105 @@ h1{
 .adviceField{
     text-align: center;
     margin: 5% auto 0% 45%;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+h3{
+  color: aqua;
+  font-size: 3rem;
+}
+
+.askForm{
+  text-align: center;
+}
+
+#searchBar{
+  width: 15rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+/* This is the countdown style in the footer*/
+:root {
+    --smaller: .75;
+  }
+  /*
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  */
+  footer {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    font-family: -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      Roboto, 
+      Oxygen-Sans, 
+      Ubuntu, 
+      Cantarell, 
+      "Helvetica Neue", 
+      sans-serif;
+  }
+  
+  .container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h4 {
+      font-size: 4rem;
+      color: greenyellow;
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    h4 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+>>>>>>> Stashed changes
