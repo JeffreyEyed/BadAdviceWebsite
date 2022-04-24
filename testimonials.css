@@ -1,0 +1,82 @@
+.wrapper{
+    /***** Designing container for testemonial cards ******/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wrapper h2{
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(140, 0, 255);
+    margin: 1.5rem;
+    margin-bottom: -25px;
+    text-align: center;
+  }
+  
+  .wrapper h5{
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62.5rem;
+    margin: 0 auto;
+  }
+  
+  .card{
+    width: 22rem;
+    height: 16rem;
+    border-radius: 15%;
+    margin: 5px;
+    padding: 20px 30px;
+    position: relative;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 10px 20px 25px rgba(255,255,255,0.1);
+    margin-bottom: 200px;
+    transition: 0.5s;
+  }
+  
+  .card img{
+    height: 90px;
+    width: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12%;
+    left: 10px;
+  
+  }
+  
+  .card p{
+    font-size: 1rem;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  
+  .card:hover{
+    transform: scale(1.4);
+    color: #333;
+    background: rgb(215, 215, 215);
+    z-index: 10000;
+  }
+  
+  @media(max-width: 768px)
+  {
+    .cards{
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .card{
+      margin: 60px 0;
+    }
+  }
+  
