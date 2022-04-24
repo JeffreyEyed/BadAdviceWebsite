@@ -61,3 +61,4 @@
       }
 
     }
+//Figure out how to erase text once button has been pushed
