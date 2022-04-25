@@ -113,6 +113,16 @@ h3{
   width: 15rem;
   height: 2rem;
   font-size: 1rem;
+  background-color:#4a4a4a;
+  
+}
+
+#searchBar::placeholder{
+  color: #4CAF50;
+}
+
+#searchBar::-ms-input-placeholder {
+  color: #4CAF50;
 }
 
 #secondButton{
