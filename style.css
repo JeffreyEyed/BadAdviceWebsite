@@ -5,11 +5,14 @@
 *::before,
 *::after{
     box-sizing: border-box;
-    font-family:  'Roboto', sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: white;
     /*margin: 0;
     padding: 0;*/
+}
+
+*{
+  font-family:  'Roboto', sans-serif;
+  background:rgb(0, 0, 0);
+  color: white;
 }
 
 :target {
@@ -37,12 +40,31 @@ h1{
     font-size: 8rem;
     border-radius: 65%;
     box-shadow: 10px 0px 10px cadetblue;
+    animation-name: title;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    align-items: center;
 }
 
 .heading {
     height: 100vh;
     margin-top: 300px;
+    align-items: center;
 }
+
+@keyframes title {
+  from {color:rgb(0, 0, 0)}
+  from {font-size: 0rem;}
+  to {color: rgb(209, 74, 96);}
+  to {font-size: 8rem;}
+}
+
+
+/******This title animation will look better on a cell phone.  Needs to have a resize @media or something???******/
+/*@keyframes title {
+  from {width: 0%;}
+  to {width: 100%;}
+}*/
 
 .heading p{
     color: rgb(209, 74, 96);
