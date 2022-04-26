@@ -53,11 +53,14 @@
       const cb = document.querySelector('#searchBar').value
 
       if(cb === "You're Awesome" ){
-        alert("Yeah I know it!")
+        /*alert("Yeah I know it!")*/
+        document.querySelector("#printResults").innerText = "Yeah I know it!"
       }else if(cb === ("")){
-        alert("You didn't type anything DUMMY!")
+        /*alert("You didn't type anything DUMMY!")*/
+        document.querySelector("#printResults").innerText = "You didn't type anything DUMMY!"
       }else{
-        alert("I'm not answering that.  You're dumb!")
+        /*alert("I'm not answering that.  You're dumb!")*/
+        document.querySelector("#printResults").innerText = "I'm not answering that.  You're dumb!"
       }
 
     }

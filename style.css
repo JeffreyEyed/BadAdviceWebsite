@@ -132,6 +132,10 @@ h3{
   margin-top: 10px;
 }
 
+#printResults{
+  text-align: center;
+}
+
 /* This is the countdown style in the footer*/
 :root {
     --smaller: .75;
