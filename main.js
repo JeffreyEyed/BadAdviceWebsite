@@ -45,13 +45,13 @@
     }());
 
 
-// This is for the Ask You Question section
+// This is for the Ask Your Question section
 
     document.querySelector('#secondButton').addEventListener('click', searchBar)
 
     function searchBar() {
       const cb = document.querySelector('#searchBar').value
-
+      
       if(cb === "You're Awesome" ){
         /*alert("Yeah I know it!")*/
         document.querySelector("#printResults").innerText = "Yeah I know it!"
