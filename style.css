@@ -52,7 +52,7 @@ h1{
     align-items: center;
 }
 
-@keyframes title {
+  @keyframes title {
   from {color:rgb(0, 0, 0)}
   from {font-size: 0rem;}
   to {color: rgb(209, 74, 96);}
