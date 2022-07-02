@@ -78,11 +78,11 @@ h1{
     font-size: 3rem;
 }
 
-.firstButton {
+#firstButton {
     text-align: center;
     color: blueviolet;
     border-radius: 20%;
-    font-size: 3rem;
+    font-size: 4rem;
     width: 50%;
     background-color: aqua;
     margin: 0% 0% 0% 25%;
@@ -90,7 +90,7 @@ h1{
     
 }
 
-.firstButton:hover {
+#firstButton:hover {
     background-color: #4CAF50; /* Green */
     color: white;
 }
@@ -134,9 +134,11 @@ h3{
   margin-top: 10px;
 }
 
-#printResults{
+#adviceGoesHere{
   text-align: center;
   font-size: 4rem;
+  color:#00ff08;
+  font-style: oblique;
 }
 
 /* This is the countdown style in the footer*/

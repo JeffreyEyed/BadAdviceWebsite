@@ -47,22 +47,45 @@
 
 // This is for the Ask Your Question section
 
-    document.querySelector('#secondButton').addEventListener('click', searchBar)
+    // document.querySelector('#secondButton').addEventListener('click', searchBar)
 
-    function searchBar() {
-      const cb = document.querySelector('#searchBar').value
+    // function searchBar() {
+    //   const cb = document.querySelector('#searchBar').value
       
-      if(cb === "You're Awesome" ){
-        /*alert("Yeah I know it!")*/
-        document.querySelector("#printResults").innerText = "Yeah I know it!"
-      }else if(cb === ("")){
-        /*alert("You didn't type anything DUMMY!")*/
-        document.querySelector("#printResults").innerText = "You didn't type anything DUMMY!"
-      }else{
-        /*alert("I'm not answering that.  You're dumb!")*/
-        document.querySelector("#printResults").innerText = "I'm not answering that.  You're dumb!"
-      }
+    //   if(cb === "You're Awesome" ){
+    //     /*alert("Yeah I know it!")*/
+    //     document.querySelector("#printResults").innerText = "Yeah I know it!"
+    //   }else if(cb === ("")){
+    //     /*alert("You didn't type anything DUMMY!")*/
+    //     document.querySelector("#printResults").innerText = "You didn't type anything DUMMY!"
+    //   }else{
+    //     /*alert("I'm not answering that.  You're dumb!")*/
+    //     document.querySelector("#printResults").innerText = "I'm not answering that.  You're dumb!"
+    //   }
 
-    }
+    // }
+
+    /////// API ///////
+
+    document.querySelector('#firstButton').addEventListener('click', getFetch)
+
+function getFetch(){
+  const choice = document.querySelector('#adviceGoesHere').value
+  //console.log(choice)
+  const url = `https://badadvice.vercel.app/api/random`
+
+  fetch(url)
+      .then(res => res.json()) // parse response as JSON
+      .then(data => {
+        console.log(data)
+        document.querySelector('#adviceGoesHere').innerText = data
+
+      })
+       
+      
+      .catch(err => {
+          console.log(`error ${err}`)
+      }
+    )}
 //Figure out how to erase text once button has been pushed
 //This is to show Joe
